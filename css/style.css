@@ -194,6 +194,10 @@ a {
   border: solid 2px #f2f2f2;
 }
 
+.fast-hotel-list input::placeholder {
+  color: #000000;
+}
+
 .fast-hotel-list input:hover {
   background-color: #ebebeb;
   border: solid 2px #ebebeb;
