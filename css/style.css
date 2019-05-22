@@ -169,22 +169,22 @@ a {
   color: #333333;
 }
 
-.index-hotel-button {
+.fast-hotel-button {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
-.index-hotel-list {
+.fast-hotel-list {
   list-style: none;
 }
 
-.index-hotel-list label {
+.fast-hotel-list label {
   line-height: 26px;
   font-weight: bold;
 }
 
-.index-hotel-list input {
+.fast-hotel-list input {
   font: inherit;
   line-height: 26px;
   font-weight: bold;
@@ -194,18 +194,18 @@ a {
   border: solid 2px #f2f2f2;
 }
 
-.index-hotel-list input:hover {
+.fast-hotel-list input:hover {
   background-color: #ebebeb;
   border: solid 2px #ebebeb;
 }
 
-.index-hotel-list input:focus {
+.fast-hotel-list input:focus {
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
   outline: none;
 }
 
-.index-hotel-submit {
+.fast-hotel-submit {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -260,6 +260,8 @@ a {
 
 .sorting-list a {
   color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-list a:hover,
@@ -269,6 +271,8 @@ a {
 
 .sorting-list a:active {
   color: #000000;
+
+  border: none;
 }
 
 a.hotel-title {
