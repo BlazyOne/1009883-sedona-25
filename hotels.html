@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона, гостиницы</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +16,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-current">Гостиницы</li>
         </ul>
       </nav>
     </header>
@@ -24,7 +26,7 @@
           <fieldset>
             <div class="form-infrastructure">
               <h2>Инфраструктура:</h2>
-              <ul>
+              <ul class="form-infrastructure-list">
                 <li>
                   <input type="checkbox" name="pool" id="pool-field" checked>
                   <label for="pool-field">Бассейн</label>
@@ -43,7 +45,7 @@
           <fieldset>
             <div class="form-type">
               <h2>Тип жилья:</h2>
-              <ul>
+              <ul class="form-type-list">
                 <li>
                   <input type="checkbox" name="hotel" id="hotel-field" checked>
                   <label for="hotel-field">Отель</label>
@@ -60,11 +62,11 @@
           </fieldset>
           <fieldset>
             <div class="form-price">
-
+              <h2>Стоимость в сутки (Р):</h2>
             </div>
           </fieldset>
           <div class="form-submit">
-            <button type="submit">Показать</button>
+            <button class="button button-transparent hotel-search-submit" type="submit">Показать</button>
           </div>
         </form>
       </section>
@@ -73,7 +75,7 @@
         <h2>Найдено: 3</h2>
         <p>Сортировка:</p>
         <ul class="sorting-list">
-          <li><a class="sorting-type-current">по цене</a></li>
+          <li class="sorting-type-current">по цене</li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по рейтингу</a></li>
         </ul>
@@ -94,7 +96,7 @@
                 </a>
               </div>
               <h1>
-                <a href="#">Amara resort & spa</a>
+                <a class="hotel-title" href="#">Amara resort & spa</a>
               </h1>
               <div class="type">
                 <span><a>Гостиница</a></span>
@@ -102,8 +104,8 @@
               <div class="price">
                 <span><a>от 4000 р.</a></span>
               </div>
-              <a class="button details-button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button details-button button-blue" href="#">Подробнее</a>
+              <a class="button book-button" href="#">Забронировать</a>
               <div class="rating">
                 <span>Рейтинг:8,5</span>
               </div>
@@ -117,7 +119,7 @@
                 </a>
               </div>
               <h1>
-                <a href="#">Desert Quail inn</a>
+                <a class="hotel-title" href="#">Desert Quail inn</a>
               </h1>
               <div class="type">
                 <span><a>Мотель</a></span>
@@ -125,8 +127,8 @@
               <div class="price">
                 <span><a>от 3000 р.</a></span>
               </div>
-              <a class="button details-button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button details-button button-blue" href="#">Подробнее</a>
+              <a class="button book-button" href="#">Забронировать</a>
               <div class="rating">
                 <span>Рейтинг:8,9</span>
               </div>
@@ -140,7 +142,7 @@
                 </a>
               </div>
               <h1>
-                <a href="#">Villas at Poco Diablo</a>
+                <a class="hotel-title" href="#">Villas at Poco Diablo</a>
               </h1>
               <div class="type">
                 <span><a>Апартаменты</a></span>
@@ -148,8 +150,8 @@
               <div class="price">
                 <span><a>от 2000 р.</a></span>
               </div>
-              <a class="button details-button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button details-button button-blue" href="#">Подробнее</a>
+              <a class="button book-button" href="#">Забронировать</a>
               <div class="rating">
                 <span>Рейтинг:9,2</span>
               </div>
