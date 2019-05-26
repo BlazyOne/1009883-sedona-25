@@ -130,9 +130,6 @@ a {
 }
 
 .intro {
-  width: 500px;
-  min-height: 216px;
-  margin: 0 auto;
   padding-top: 58px;
   padding-bottom: 50px;
 
@@ -142,7 +139,6 @@ a {
 .intro h1 {
   width: 440px;
   margin: 0 auto;
-  margin-top: 0;
   margin-bottom: 32px;
 
   font-size: 21px;
@@ -150,6 +146,9 @@ a {
 }
 
 .intro p {
+  width: 500px;
+  margin: 0 auto;
+
   line-height: 26px;
 }
 
@@ -159,8 +158,8 @@ a {
 
 .reason-content {
   width: 400px;
-  min-height: 256px;
   padding-top: 50px;
+  padding-bottom: 34px;
   padding-left: 47px;
   padding-right: 47px;
 
@@ -173,7 +172,6 @@ a {
 .reason-content h2 {
   width: 157px;
   margin: 0 auto;
-  margin-top: 0;
   margin-bottom: 28px;
 
   font-size: 21px;
@@ -193,6 +191,7 @@ a {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  padding-top: 165px;
   padding-bottom: 86px;
 
   list-style: none;
@@ -205,7 +204,6 @@ a {
 }
 
 .features-list h2 {
-  margin-top: 165px;
   margin-bottom: 30px;
 
   font-size: 21px;
@@ -224,13 +222,14 @@ a {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  padding-top: 51px;
+  padding-bottom: 63px;
 
   list-style: none;
 }
 
 .reasons-list li {
   width: 270px;
-  padding-bottom: 63px;
 
   text-align: center;
 }
@@ -241,8 +240,10 @@ a {
 }
 
 .reasons-list h2 {
-  margin-top: 51px;
+  width: 120px;
   margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 21px;
 }
@@ -263,11 +264,11 @@ a {
 .offer-wrapper {
   width: 440px;
   margin: 0 auto;
+  padding-top: 20px;
   padding-bottom: 35px;
 }
 
 .offer h3 {
-  margin-top: 55px;
   margin-bottom: 29px;
 
   font-size: 30px;
