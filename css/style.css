@@ -209,7 +209,7 @@ img {
 
 .welcome-image {
   padding-top: 76px;
-  padding-bottom: 79px;
+  padding-bottom: 73px;
 }
 
 .intro {
@@ -428,12 +428,16 @@ img {
 }
 
 .fast-hotel-form {
+  position: absolute;
+  left: 50%;
+
   width: 568px;
   margin: 0 auto;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  margin-left: -284px;
+  padding-top: 56px;
+  padding-bottom: 24px;
   padding-left: 55px;
-  padding-right: 53px;
+  padding-right: 55px;
 
   background-color: #ffffff;
 }
@@ -451,7 +455,7 @@ img {
 }
 
 .fast-hotel-list li {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .fast-hotel-list label {
@@ -501,9 +505,47 @@ img {
   width: 38px;
 }
 
+.number-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+
+  vertical-align: bottom;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.number-button svg {
+  fill: #a9a9a9;
+}
+
+.number-button:hover svg,
+.number-button:focus svg {
+  fill: #000000;
+}
+
+.number-button:active svg {
+  fill: #81b3d2;
+}
+
+.number-button-minus {
+  margin-right: -4px;
+}
+
+.number-button-plus {
+  margin-left: -4px;
+}
+
+.fast-hotel-list .children-field-label {
+  min-width: 67px;
+}
+
 .fast-hotel-submit {
   width: 458px;
-  margin-top: 40px;
+  margin-top: 24px;
   margin-bottom: 0;
   padding: 16px 10px;
 
