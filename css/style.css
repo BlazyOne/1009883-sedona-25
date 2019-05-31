@@ -455,6 +455,8 @@ img {
 }
 
 .fast-hotel-list li {
+  position: relative;
+
   margin-bottom: 30px;
 }
 
@@ -499,6 +501,31 @@ img {
 
 .fast-hotel-list .hotel-input-date {
   width: 346px;
+}
+
+.calendar-button {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+}
+
+.calendar {
+  fill: #cacaca;
+}
+
+.calendar:hover,
+.calendar:focus {
+  fill: #000000;
+}
+
+.calendar:active {
+  fill: #81b3d2;
 }
 
 .fast-hotel-list .hotel-input-number {
