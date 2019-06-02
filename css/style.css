@@ -213,8 +213,8 @@ img {
 }
 
 .intro {
-  padding-top: 58px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 51px;
 
   text-align: center;
 }
@@ -222,7 +222,7 @@ img {
 .intro h1 {
   width: 440px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   font-size: 21px;
   line-height: 26px;
@@ -241,7 +241,7 @@ img {
 
 .reason-content {
   width: 400px;
-  padding-top: 50px;
+  padding-top: 47px;
   padding-bottom: 34px;
   padding-left: 47px;
   padding-right: 47px;
@@ -255,13 +255,13 @@ img {
 .reason-content h2 {
   width: 151px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 
   font-size: 21px;
 }
 
 .reason-content p {
-  margin-top: 25px;
+  margin-top: 21px;
 }
 
 .reason-image {
@@ -440,6 +440,7 @@ img {
   padding-right: 55px;
 
   background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .fast-hotel-list {
@@ -468,6 +469,7 @@ img {
   line-height: 26px;
   font-weight: bold;
   text-align: left;
+  vertical-align: baseline;
 }
 
 .fast-hotel-list input {
@@ -597,8 +599,8 @@ img {
 
 .hotel-search-form {
   padding-top: 14px;
-  padding-bottom: 33px;
-  padding-left: 70px;
+  padding-bottom: 30px;
+  padding-left: 72px;
   padding-right: 72px;
 
   color: #ffffff;
@@ -622,7 +624,7 @@ img {
 
 .form-infrastructure,
 .form-type {
-  min-width: 250px;
+  min-width: 255px;
 }
 
 .hotel-search-form h2 {
@@ -631,7 +633,7 @@ img {
 
 .form-infrastructure h2,
 .form-type h2 {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .form-infrastructure-list,
@@ -652,12 +654,48 @@ img {
   margin-bottom: 0;
 }
 
+.hotel-search-checkbox + label {
+  position: relative;
+
+  margin-left: 40px;
+}
+
+.hotel-search-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -3px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off-enabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.hotel-search-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on-enabled.svg");
+}
+
+.hotel-search-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.hotel-search-checkbox:disabled:checked + label::before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
 .price-and-submit {
   margin-left: auto;
 }
 
 .price-and-submit fieldset {
-  width: 330px;
+  width: 318px;
+}
+
+.form-price-title h2 {
+  margin-bottom: 10px;
 }
 
 .price-controls {
@@ -700,6 +738,10 @@ img {
 .price-controls .max-price {
   width: 155px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  padding-left: 57px;
 }
 
 .price-controls input {
@@ -763,14 +805,19 @@ img {
   left: 80%;
 }
 
-.hotel-search-submit {
-  display: block;
+.form-submit {
+  text-align: center;
+}
 
-  padding-top: 4px;
-  padding-bottom: 4px;
+.hotel-search-submit {
+  display: inline-block;
+
+  padding-top: 6px;
+  padding-bottom: 5px;
   padding-left: 35px;
   padding-right: 33px;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: -9px;
 }
 
 .sorting {
@@ -778,7 +825,7 @@ img {
   align-items: baseline;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 74px;
+  padding-left: 72px;
   padding-right: 74px;
 }
 
@@ -802,7 +849,7 @@ img {
 }
 
 .sorting-list li {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 .sorting-direction {
@@ -842,6 +889,8 @@ img {
 
 .sorting-list .sorting-type-current {
   color: #81b3d2;
+
+  border: none;
 }
 
 .sorting-direction li {
@@ -898,8 +947,8 @@ img {
 
 .hotels-description h1 {
   width: 100%;
-  margin-top: -4px;
-  margin-bottom: 8px;
+  margin-top: -5px;
+  margin-bottom: 6px;
 }
 
 .hotels-title {
@@ -921,7 +970,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .hotels-description-wrapper span {
@@ -930,8 +979,8 @@ img {
 
 .hotels-description-wrapper .button {
   display: block;
-  margin-top: 13px;
-  padding-top: 2px;
+  margin-top: 14px;
+  padding-top: 4px;
   padding-bottom: 2px;
   padding-left: 16px;
   padding-right: 16px;
