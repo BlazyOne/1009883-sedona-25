@@ -781,13 +781,15 @@ img {
 
 .price-controls label {
   display: inline-block;
-  margin-top: -3px;
+  padding-top: 6px;
 
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
 
   cursor: pointer;
+
+  line-height: 1;
 }
 
 .price-controls .min-price,
@@ -1104,8 +1106,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          -ms-flex-line-pack: stretch;
+              align-content: stretch;
   min-height: 120px;
-  padding-top: 10px;
+  padding-top: 36px;
   padding-bottom: 10px;
   padding-left: 132px;
   padding-right: 101px;
@@ -1203,6 +1207,7 @@ img {
   width: 115px;
   height: 41px;
   margin-left: 8px;
+  overflow: hidden;
 
   vertical-align: middle;
 }
