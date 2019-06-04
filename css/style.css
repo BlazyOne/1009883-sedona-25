@@ -144,6 +144,8 @@ img {
   width: 239px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -656,8 +658,11 @@ img {
 
 .hotel-search-checkbox + label {
   position: relative;
-
+  
+  display: block;
   margin-left: 40px;
+
+  cursor: pointer;
 }
 
 .hotel-search-checkbox + label::before {
@@ -684,6 +689,10 @@ img {
 
 .hotel-search-checkbox:disabled:checked + label::before {
   background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.hotel-search-checkbox:focus + label::before {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .price-and-submit {
@@ -1086,6 +1095,12 @@ img {
 
   line-height: 26px;
   text-align: center;
+}
+
+.footer-copyright span {
+  display: inline-block;
+  padding-top: 8px;
+  margin-right: -4px;
 }
 
 .copyright-logo {
