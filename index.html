@@ -101,11 +101,11 @@
         </section>
 
         <section class="contacts">
-          <form class="fast-hotel-form" method="get" action="https://echo.htmlacademy.ru">
+          <form class="fast-hotel-form fast-form-show" method="get" action="https://echo.htmlacademy.ru">
             <ul class="fast-hotel-list">
               <li>
                 <label for="arrival-field">Дата заезда:</label>
-                <input class="hotel-input-date" type="text" name="arrival" id="arrival-field" placeholder="24 апреля 2017">
+                <input class="hotel-input-date" type="text" name="arrival" id="arrival-field" placeholder="24 апреля 2017" required>
                 <button class="calendar-button" type="button">
                   <span class="visually-hidden">Кнопка для выбора даты заезда из календаря</span>
                   <svg class="calendar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -134,7 +134,7 @@
               </li>
               <li>
                 <label for="departure-field">Дата выезда:</label>
-                <input class="hotel-input-date" type="text" name="departure" id="departure-field" placeholder="4 июля 2017">
+                <input class="hotel-input-date" type="text" name="departure" id="departure-field" placeholder="4 июля 2017" required>
                 <button class="calendar-button" type="button">
                   <span class="visually-hidden">Кнопка для выбора даты выезда из календаря</span>
                   <svg class="calendar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -170,7 +170,7 @@
                     <rect width="12" height="3" x="0" y="0" />
                   </svg>
                 </button>
-                <input class="hotel-input-number" type="text" name="adults" id="adults-field" placeholder="2">
+                <input class="hotel-input-number" type="text" name="adults" id="adults-field" placeholder="2" required>
                 <button class="number-button number-button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество взрослых на еденицу</span>
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="11px" height="11px" viewBox="0 0 11 11" enable-background="new 0 0 11 11" xml:space="preserve">
@@ -188,7 +188,7 @@
                     <rect width="12" height="3" x="0" y="0" />
                   </svg>
                 </button>
-                <input class="hotel-input-number" type="text" name="children" id="children-field" placeholder="0">
+                <input class="hotel-input-number" type="text" name="children" id="children-field" placeholder="0" required>
                 <button class="number-button number-button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество детей на еденицу</span>
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="11px" height="11px" viewBox="0 0 11 11"
@@ -294,5 +294,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/javascript.min.js"></script>
   </body>
 </html>

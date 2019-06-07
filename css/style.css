@@ -2,7 +2,7 @@
 font-family: "PT Sans";
 font-weight: 400;
 src: url("../fonts/ptsans.woff2") format("woff2"),
-url("../fonts/ptsans.woff.woff") format("woff");
+url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -431,10 +431,6 @@ img {
   color: #333333;
 }
 
-.contacts {
-  position: relative;
-}
-
 .fast-hotel-button {
   display: block;
   width: 568px;
@@ -447,10 +443,91 @@ img {
   font-weight: bold;
 }
 
+.contacts {
+  position: relative;
+
+  overflow: hidden;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 .fast-hotel-form {
   position: absolute;
   left: 50%;
 
+  display: none;
   width: 568px;
   margin: 0 auto;
   margin-left: -284px;
@@ -462,6 +539,19 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.fast-form-show {
+  display: block;
+
+  -webkit-animation: slide-down 0.6s;
+
+          animation: slide-down 0.6s;
+}
+
+.fast-form-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .fast-hotel-list {
@@ -504,6 +594,7 @@ img {
   padding-right: 12px;
 
   font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -514,18 +605,22 @@ img {
 
 .fast-hotel-list input::-webkit-input-placeholder {
   color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .fast-hotel-list input:-ms-input-placeholder {
   color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .fast-hotel-list input::-ms-input-placeholder {
   color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .fast-hotel-list input::placeholder {
   color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .fast-hotel-list input:hover {
@@ -541,6 +636,7 @@ img {
 
 .fast-hotel-list .hotel-input-date {
   width: 346px;
+  padding-right: 30px;
 }
 
 .calendar-button {
@@ -704,7 +800,6 @@ img {
 .hotel-search-checkbox + label {
   position: relative;
   
-  display: block;
   margin-left: 40px;
 
   cursor: pointer;
@@ -808,6 +903,7 @@ img {
 
   color: inherit;
   font: inherit;
+  font-family: "PT Sans", Arial, sans-serif;
 
   background: none;
   border: none;
@@ -876,6 +972,8 @@ img {
   padding-right: 33px;
   margin: 0;
   margin-left: -9px;
+
+  vertical-align: baseline;
 }
 
 .sorting {
@@ -1197,6 +1295,8 @@ img {
   display: inline-block;
   padding-top: 8px;
   margin-right: -4px;
+
+  vertical-align: baseline;
 }
 
 .copyright-logo {
