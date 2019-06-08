@@ -7,6 +7,8 @@ var departure = document.querySelector("#departure-field");
 var adults = document.querySelector("#adults-field");
 var children = document.querySelector("#children-field");
 
+fastHotelForm.classList.remove("fast-form-show");
+
 fastHotelButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   fastHotelForm.classList.toggle("fast-form-show");
