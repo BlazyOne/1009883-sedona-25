@@ -154,19 +154,19 @@ img {
   padding-right: 10px;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-left: auto;
+.site-navigation li:nth-child(4n-1) {
+  margin-left: 244px;
 }
 
-.site-navigation li:nth-child(1),
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(4n-3),
+.site-navigation li:nth-child(4n-2) {
   padding-left: 72px;
 
   text-align: left;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+.site-navigation li:nth-child(4n-1),
+.site-navigation li:nth-child(4n) {
   padding-right: 72px;
 
   text-align: right;
