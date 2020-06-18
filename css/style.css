@@ -111,7 +111,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  
+
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
           box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
@@ -783,7 +783,7 @@ img {
 .form-type-list {
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -799,7 +799,7 @@ img {
 
 .hotel-search-checkbox + label {
   position: relative;
-  
+
   margin-left: 40px;
 
   cursor: pointer;
